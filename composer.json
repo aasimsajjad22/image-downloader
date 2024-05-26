@@ -1,0 +1,34 @@
+{
+    "name": "aasimsajjad22/image-downloader",
+    "description": "Download the image from given Url and resize it",
+    "autoload": {
+        "psr-4": {
+            "Aasimsajjad22\\ImageDownloader\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Aasimsajjad22\\ImageDownloader\\ImageDownloaderServiceProvider"
+            ],
+            "aliases": {
+                "ImageDownloader": "Aasimsajjad22\\ImageDownloader\\ImageDownloaderFacade"
+            }
+        }
+    },
+    "authors": [
+        {
+            "name": "Aasim Sajjad",
+            "email": "aasimsajjad22@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.4|^8.0",
+        "guzzlehttp/guzzle": "^7.8",
+        "intervention/image": "^2.5",
+        "illuminate/support": "^11.8"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^11.1"
+    }
+}
